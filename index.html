@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Basic E-Commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e65c00;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My E-Commerce Store</h1>
+    <p>Buy the best products online</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Cart</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="product">
+        <img src="https://via.placeholder.com/300x180" alt="Product 1">
+        <h3>Product 1</h3>
+        <p class="price">₹999</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/300x180" alt="Product 2">
+        <h3>Product 2</h3>
+        <p class="price">₹1499</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/300x180" alt="Product 3">
+        <h3>Product 3</h3>
+        <p class="price">₹1999</p>
+        <button>Add to Cart</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 My E-Commerce Store</p>
+</footer>
+
+</body>
+</html>
